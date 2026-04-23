@@ -4,92 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TransArchiLogistic - Servicios de Transporte</title>
+    <meta name="description" content="Empresa 100% mexicana de transporte de carga terrestre con más de 40 años de experiencia. Guadalajara, Jalisco.">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-      <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Encabezado -->
-    <header class="header">
+
+    <!-- ══ HEADER ══ -->
+    <header class="header" id="header">
         <nav class="navbar">
             <div class="logo">
-                <img src="img/Logo.png" alt="TransArchiLogistic Logo" class="logo-image">
+                <a href="#inicio">
+                    <img src="img/Logo.png" alt="TransArchiLogistic Logo" class="logo-image">
+                </a>
             </div>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#servicios">Unidades</a></li>
+                <li><a href="#personal">Personal</a></li>
+                <li><a href="galeria.html">Galería</a></li>
                 <li><a href="#cobertura">Cobertura</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
     </header>
 
-    <!-- Sección Principal -->
     <main>
-        <!-- Banner Principal -->
+
+        <!-- ══ HERO ══ -->
         <section id="inicio" class="hero">
+            <div class="hero-overlay"></div>
             <div class="hero-content">
-                <h2>TransArchiLogistic</h2>
-                <p>Fletes confiables, soluciones a tu medida. ¡La tranquilidad de tu negocio en movimiento!</p>
-                <a href="#contacto" class="btn btn-outline-light btn-lg">Contáctanos</a>
+                <span class="hero-badge">🚛 Empresa 100% Mexicana — Guadalajara, Jalisco</span>
+                <h1>Trans Archi<span>Logistics</span></h1>
+                <p>Fletes confiables, soluciones a tu medida.<br>¡La tranquilidad de tu negocio en movimiento!</p>
+                <a href="#contacto" class="btn-hero">Cotiza tu flete</a>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-num">25+</span>
+                        <span class="stat-label">Años de experiencia</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">5</span>
+                        <span class="stat-label">Tipos de unidad</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">32</span>
+                        <span class="stat-label">Estados cubiertos</span>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Quiénes Somos -->
+        <!-- ══ NOSOTROS ══ -->
         <section id="nosotros" class="about">
-            <div class="about-content">
-                <h2>¿Quiénes somos?</h2>
-                <p class="about-description">Somos una empresa 100% Mexicana, con sede en Guadalajara, Jalisco, con más de 40 años de experiencia atendiendo el traslado de carga terrestre dentro de la republica mexicana, dedicada a crear soluciones logísticas e innovadoras. Sujeta a estándares de productividad, calidad y servicio.</p>
-                
-                <!-- Misión y Visión -->
+            <div class="about-content fade-in">
+                <div class="section-header">
+                    <span class="section-tag">Quiénes somos</span>
+                    <h2>Más de 25 años<br>en movimiento</h2>
+                    <div class="divider"></div>
+                </div>
+                <p class="about-description">Somos una empresa <strong>100% Mexicana</strong>, con sede en Guadalajara, Jalisco, con más de 40 años de experiencia atendiendo el traslado de carga terrestre dentro de la República Mexicana, dedicada a crear soluciones logísticas e innovadoras. Sujeta a estándares de productividad, calidad y servicio.</p>
+
                 <div class="mission-vision">
                     <div class="mission-card">
-                        <h3><i class="fas fa-bullseye"></i> Misión</h3>
+                        <div class="mv-icon"><i class="fas fa-bullseye"></i></div>
+                        <h3>Misión</h3>
                         <p>Proporcionar servicios de transporte de carga terrestre de la más alta calidad, garantizando la seguridad y puntualidad en la entrega, contribuyendo al éxito de nuestros clientes mediante soluciones logísticas eficientes y personalizadas.</p>
                     </div>
-                    
                     <div class="vision-card">
-                        <h3><i class="fas fa-eye"></i> Visión</h3>
+                        <div class="mv-icon"><i class="fas fa-eye"></i></div>
+                        <h3>Visión</h3>
                         <p>Ser la empresa líder en transporte y logística en México, reconocida por nuestra excelencia en el servicio, innovación tecnológica y compromiso con la satisfacción total de nuestros clientes.</p>
                     </div>
                 </div>
-                
+
                 <div class="features-grid">
                     <div class="feature-card">
                         <i class="fas fa-route"></i>
                         <h3>Rutas y Experiencia</h3>
-                        <p>Conocemos muy bien toda la republica Mexicana </p>
+                        <p>Conocemos muy bien toda la República Mexicana.</p>
                     </div>
-                    
                     <div class="feature-card">
                         <i class="fas fa-truck"></i>
                         <h3>Nuestros Camiones</h3>
                         <p>Contamos con unidades completamente nuevas y equipadas.</p>
                     </div>
-                    
                     <div class="feature-card">
                         <i class="fas fa-satellite"></i>
-                        <h3>Rastreo y Comunicación</h3>
-                        <p>Tecnología más avanzada en sistemas de comunicación y localización vía satélite.</p>
+                        <h3>Rastreo GPS</h3>
+                        <p>Tecnología avanzada en comunicación y localización vía satélite.</p>
                     </div>
-                    
                     <div class="feature-card">
                         <i class="fas fa-shield-alt"></i>
                         <h3>Seguro de Mercancía</h3>
@@ -99,177 +109,351 @@
             </div>
         </section>
 
-        <!-- Servicios -->
+        <!-- ══ SERVICIOS / UNIDADES ══ -->
         <section id="servicios" class="services">
-            <h2>Nuestras Unidades de Transporte</h2>
+            <div class="section-header center">
+                <span class="section-tag">Nuestra flota</span>
+                <h2 class="light">Unidades de transporte</h2>
+                <div class="divider center"></div>
+            </div>
             <div class="service-grid">
-                <div class="service-card">
+                <div class="service-card fade-in">
                     <img src="img/Carga_Ligera.png" alt="Carga Ligera" class="service-image">
                     <h3>Carga Ligera</h3>
-                    <p>Capacidad de 1 a 5 toneladas</p>
-                    <p>Ideal para distribución urbana y entregas locales</p>
+                    <p class="cap"><i class="fas fa-weight-hanging"></i> 1 a 5 Toneladas</p>
+                    <p>Ideal para distribución urbana y entregas locales.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card fade-in">
                     <img src="img/Carga_Media.png" alt="Carga Media" class="service-image">
                     <h3>Carga Media</h3>
-                    <p>Capacidad de 5 a 10 toneladas</p>
-                    <p>Perfecto para cargas comerciales medianas</p>
+                    <p class="cap"><i class="fas fa-weight-hanging"></i> 5 a 10 Toneladas</p>
+                    <p>Perfecto para cargas comerciales medianas.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card fade-in">
                     <img src="img/Carga_Pesada.png" alt="Carga Pesada" class="service-image">
                     <h3>Carga Pesada</h3>
-                    <p>Capacidad de 10 a 15 toneladas</p>
-                    <p>Soluciones para cargas industriales</p>
+                    <p class="cap"><i class="fas fa-weight-hanging"></i> 10 a 15 Toneladas</p>
+                    <p>Soluciones para cargas industriales de gran volumen.</p>
                 </div>
-                <div class="service-card">
-                    <img src="img/Trailer_48.png" alt="Trailer 48'" class="service-image">
+                <div class="service-card fade-in">
+                    <img src="img/Trailer_48.png" alt="Trailer 48 pies" class="service-image">
                     <h3>Trailer 48'</h3>
-                    <p>Trailer de 48 pies de longitud</p>
-                    <p>Ideal para carga consolidada</p>
+                    <p class="cap"><i class="fas fa-truck-moving"></i> Carga Consolidada</p>
+                    <p>Trailer de 48 pies, ideal para carga consolidada.</p>
                 </div>
-                <div class="service-card">
-                    <img src="img/Trailer_53.png" alt="Trailer 53'" class="service-image">
+                <div class="service-card fade-in">
+                    <img src="img/Trailer_53.png" alt="Trailer 53 pies" class="service-image">
                     <h3>Trailer 53'</h3>
-                    <p>Trailer de 53 pies de longitud</p>
-                    <p>Máxima capacidad para grandes volúmenes</p>
+                    <p class="cap"><i class="fas fa-truck-moving"></i> Máxima Capacidad</p>
+                    <p>El mayor volumen para grandes operaciones logísticas.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Cobertura -->
+        <!-- ══ PERSONAL ══ -->
+        <section id="personal" class="personal-section">
+            <div class="section-header center">
+                <span class="section-tag">Nuestro equipo</span>
+                <h2>Personal comprometido</h2>
+                <div class="divider center"></div>
+                <p class="personal-intro">Tenemos el mayor compromiso al asignar el mejor personal: uniformado, capacitado y disponible las 24 horas del día. Todos nuestros operadores cuentan con licencia federal de manejo y están asegurados ante el IMSS.</p>
+            </div>
+            <div class="personal-grid">
+                <div class="personal-card fade-in">
+                    <div class="personal-icon"><i class="fas fa-hard-hat"></i></div>
+                    <h3>Uniformados</h3>
+                    <p>Nuestro personal se presenta siempre con uniforme oficial, proyectando profesionalismo e identidad en cada servicio.</p>
+                </div>
+                <div class="personal-card fade-in">
+                    <div class="personal-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Capacitados</h3>
+                    <p>Todos nuestros operadores cuentan con licencia federal de manejo y formación continua en seguridad vial y manejo de carga.</p>
+                </div>
+                <div class="personal-card fade-in">
+                    <div class="personal-icon"><i class="fas fa-headset"></i></div>
+                    <h3>Comunicación 24/7</h3>
+                    <p>Estamos en contacto permanente con cada unidad. Disponibles las 24 horas para atender cualquier necesidad durante el traslado.</p>
+                </div>
+                <div class="personal-card fade-in">
+                    <div class="personal-icon"><i class="fas fa-hospital"></i></div>
+                    <h3>Asegurados IMSS</h3>
+                    <p>Todo nuestro personal operativo está debidamente asegurado ante el IMSS, garantizando tranquilidad y respaldo en cada operación.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══ COBERTURA ══ -->
         <section id="cobertura" class="coverage">
-            <h2>Cobertura Nacional</h2>
+            <div class="section-header center">
+                <span class="section-tag">Dónde llegamos</span>
+                <h2 class="light">Cobertura nacional</h2>
+                <div class="divider center"></div>
+            </div>
             <div class="coverage-map">
                 <img src="img/map-mexico.png" alt="Mapa de cobertura en México">
-                <p>Servicio en toda la República Mexicana</p>
+            </div>
+            <div style="text-align:center;">
+                <span class="cobertura-badge">🗺️ Servicio en toda la República Mexicana</span>
             </div>
         </section>
 
-        <!-- Contacto -->
+        <!-- ══ CONTACTO ══ -->
         <section id="contacto" class="contact">
-            <h2>Contacto</h2>
-            <div class="contact-form">
-                <form id="contactForm" onsubmit="enviarWhatsApp(event)">
-                    <div class="form-group">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required>
+            <div class="contact-wrap">
+                <div class="contact-info">
+                    <span class="section-tag">Contáctanos</span>
+                    <h2>Cotiza tu<br>flete hoy</h2>
+                    <div class="divider"></div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <strong>Correo electrónico</strong>
+                            <p>transportesarchi@hotmail.com</p>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Correo electrónico:</label>
-                        <input type="email" id="email" name="email" required>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <div>
+                            <strong>Teléfono / WhatsApp</strong>
+                            <p>(33) 2252-2259</p>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="telefono">Teléfono:</label>
-                        <input type="tel" id="telefono" name="telefono" required>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <strong>Oficinas</strong>
+                            <p>Guadalajara, Jalisco, México</p>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-outline-primary submit-button">
-                        <i class="fas fa-paper-plane"></i> Enviar Mensaje
-                    </button>
-                </form>
+                </div>
+
+                <div class="contact-form fade-in">
+                    <form id="contactForm" onsubmit="enviarWhatsApp(event)">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="(33) 0000-0000">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" placeholder="Describe tu necesidad de transporte..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">
+                            <i class="fas fa-paper-plane"></i> Enviar cotización
+                        </button>
+                    </form>
+                </div>
             </div>
         </section>
+
     </main>
 
-    <!-- Pie de página -->
+    <!-- ══ FOOTER ══ -->
     <footer class="footer">
         <div class="footer-content">
+            <div class="footer-section brand">
+                <img src="img/Logo.png" alt="TransArchiLogistic" class="footer-logo">
+                <p>Soluciones de transporte confiables para toda la República Mexicana.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61572452810139" target="_blank" rel="noopener" class="social-btn fb">
+                        <i class="fab fa-facebook-f"></i> Facebook
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=5213322522259&text=Quiero%20cotizar%20un%20flete%20%F0%9F%9A%9A" target="_blank" rel="noopener" class="social-btn wa">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
             <div class="footer-section">
-                <h3>TransArchiLogistic</h3>
-                <p>Soluciones de transporte confiables para toda la República Mexicana</p>
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Unidades</a></li>
+                    <li><a href="#personal">Personal</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#cobertura">Cobertura</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
             </div>
             <div class="footer-section">
                 <h3>Contacto</h3>
-                <p>Email: transportesarchi@hotmail.com</p>
-                <p>Cel: (33) 2252-2259</p>
-                <p>Oficinas: Guadalajara, Jalisco</p>
-            </div>
-            <div class="footer-section">
-                <h3>Síguenos</h3>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/profile.php?id=61572452810139" target="_blank">Facebook</a>
-                    <a href="https://api.whatsapp.com/send?phone=5213322522259&text=Quiero%20cotizar%20un%20servicio%20de%20flete%20%F0%9F%9A%9A%F0%9F%92%A8" target="_blank">WhatsApp</a>
-                    
-                </div>
+                <p><i class="fas fa-envelope"></i> transportesarchi@hotmail.com</p>
+                <p>
+    <i class="fas fa-phone-alt"></i> 
+    <a href="https://wa.me/523322522259" target="_blank" class="whatsapp-link">
+        (33) 2252 2259 ALEXIS NUÑO
+    </a>
+</p>
+<p>
+    <i class="fas fa-phone-alt"></i> 
+    <a href="https://wa.me/523328328012" target="_blank" class="whatsapp-link">
+        (33) 2832 8012 MISSAEL NUÑO
+    </a>
+</p>
+<p>
+    <i class="fas fa-phone-alt"></i> 
+    <a href="https://wa.me/523312797900" target="_blank" class="whatsapp-link">
+        (33) 1279 7900 SAUL NUÑO
+    </a>
+</p>
+                <p><i class="fas fa-map-marker-alt"></i> Guadalajara, Jalisco</p>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2024 TransArchiLogistic. Todos los derechos reservados.</p>
         </div>
     </footer>
-<script>
-function enviarWhatsApp(e) {
-    e.preventDefault();
-    
-    // Obtener los valores del formulario
-    const nombre = document.getElementById('nombre').value;
-    const email = document.getElementById('email').value;
-    const telefono = document.getElementById('telefono').value;
-    const mensaje = document.getElementById('mensaje').value;
-    
-    // Crear el mensaje para WhatsApp
-    const mensajeWhatsApp = 
-        `¡Hola! Me gustaría solicitar información:\n\n` +
-        `Nombre: ${nombre}\n` +
-        `Email: ${email}\n` +
-        `Teléfono: ${telefono}\n` +
-        `Mensaje: ${mensaje}`;
-    
-    // Número de WhatsApp (tu número)
-    const numeroWhatsApp = "523322522259";
-    
-    // Crear el enlace de WhatsApp
-    const urlWhatsApp = `https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=${encodeURIComponent(mensajeWhatsApp)}`;
-    
-    // Abrir WhatsApp en una nueva ventana
-    window.open(urlWhatsApp, '_blank');
-    
-    // Limpiar el formulario
-    document.getElementById('contactForm').reset();
-}
-</script>
-<script>
-window.addEventListener('scroll', function() {
-    const header = document.querySelector('.header');
-    if (window.scrollY === 0) {
-        // Cuando está en la parte superior
-        header.classList.remove('scrolled');
-    } else {
-        // Cuando se hace scroll hacia abajo
-        header.classList.add('scrolled');
-    }
-});
-</script>
-<script>
-// Función para verificar si un elemento está en el viewport
-function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-        rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.bottom >= 0
-    );
-}
 
-// Función para manejar la animación de los elementos
-function handleScrollAnimations() {
-    const elements = document.querySelectorAll('.about-content, .service-card, .contact-form');
-    
-    elements.forEach(element => {
-        if (isInViewport(element)) {
-            element.classList.add('visible');
+    <!-- ══ BOTÓN FLOTANTE WHATSAPP ══ -->
+    <div class="wa-float">
+        <a href="https://api.whatsapp.com/send?phone=5213322522259&text=Hola%2C%20quiero%20cotizar%20un%20flete%20%F0%9F%9A%9A"
+           target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="wa-label">¡Cotiza por WhatsApp!</span>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="window.js"></script>
+    <script>
+        /* — Menú hamburguesa — */
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu    = document.getElementById('navMenu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => navMenu.classList.remove('active'));
+        });
+
+        /* — Navbar activo en scroll — */
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks  = document.querySelectorAll('.nav-menu a');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(s => {
+                if (window.scrollY >= s.offsetTop - 90) current = s.id;
+            });
+            navLinks.forEach(link => {
+                link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+            });
+        });
+
+        /* — Animaciones fade-in — */
+        function handleScrollAnimations() {
+            document.querySelectorAll('.fade-in, .about-content, .service-card, .contact-form, .personal-card').forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top <= window.innerHeight && rect.bottom >= 0) el.classList.add('visible');
+            });
         }
-    });
-}
+        window.addEventListener('scroll', handleScrollAnimations);
+        window.addEventListener('load', handleScrollAnimations);
+        handleScrollAnimations();
 
-// Agregar los event listeners
-window.addEventListener('scroll', handleScrollAnimations);
-window.addEventListener('load', handleScrollAnimations);
+        /* — Filtros de galería — */
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const allItems   = document.querySelectorAll('.gallery-item');
 
-// Ejecutar una vez al inicio para elementos que ya están en el viewport
-handleScrollAnimations();
-</script>
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.dataset.filter;
+
+                allItems.forEach(item => {
+                    if (filter === 'all' || item.dataset.cat === filter) {
+                        item.style.display = '';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+                // Reconstruir índices visibles para el lightbox
+                buildVisibleImages();
+            });
+        });
+
+        /* — Galería / Lightbox — */
+        let visibleImages = [];
+        let currentIdx = 0;
+
+        function buildVisibleImages() {
+            visibleImages = Array.from(document.querySelectorAll('.gallery-item:not([style*="none"]) img'))
+                .map(img => ({ src: img.src, alt: img.alt }));
+            // Reasignar onclick a items visibles
+            document.querySelectorAll('.gallery-item:not([style*="none"])').forEach((item, i) => {
+                item.onclick = () => openLightbox(i);
+            });
+        }
+
+        // Inicializar
+        buildVisibleImages();
+
+        function openLightbox(index) {
+            buildVisibleImages();
+            currentIdx = index;
+            updateLightbox();
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function updateLightbox() {
+            if (!visibleImages[currentIdx]) return;
+            document.getElementById('lightboxImg').src = visibleImages[currentIdx].src;
+            document.getElementById('lightboxImg').alt = visibleImages[currentIdx].alt;
+            document.getElementById('lightboxCounter').textContent =
+                (currentIdx + 1) + ' / ' + visibleImages.length;
+        }
+
+        function prevImg() {
+            currentIdx = (currentIdx - 1 + visibleImages.length) % visibleImages.length;
+            updateLightbox();
+        }
+
+        function nextImg() {
+            currentIdx = (currentIdx + 1) % visibleImages.length;
+            updateLightbox();
+        }
+
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) closeLightbox();
+        });
+        document.addEventListener('keydown', function(e) {
+            if (!document.getElementById('lightbox').classList.contains('active')) return;
+            if (e.key === 'Escape')     closeLightbox();
+            if (e.key === 'ArrowRight') nextImg();
+            if (e.key === 'ArrowLeft')  prevImg();
+        });
+
+        /* — Formulario → WhatsApp — */
+        function enviarWhatsApp(e) {
+            e.preventDefault();
+            const nombre   = document.getElementById('nombre').value;
+            const email    = document.getElementById('email').value;
+            const telefono = document.getElementById('telefono').value;
+            const mensaje  = document.getElementById('mensaje').value;
+            const texto = encodeURIComponent(
+                '¡Hola! Me gustaría solicitar información:\n\n' +
+                'Nombre: ' + nombre + '\n' +
+                'Email: '  + email  + '\n' +
+                (telefono ? 'Teléfono: ' + telefono + '\n' : '') +
+                'Mensaje: ' + mensaje
+            );
+            window.open('https://api.whatsapp.com/send?phone=523322522259&text=' + texto, '_blank');
+            document.getElementById('contactForm').reset();
+        }
+    </script>
 </body>
 </html>
