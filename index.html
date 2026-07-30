@@ -118,36 +118,76 @@
             </div>
             <div class="service-grid">
                 <div class="service-card fade-in">
-                    <img src="img/Carga_Ligera.png" alt="Carga Ligera" class="service-image">
+                    <div class="service-image-wrapper">
+                        <img src="img/Carga_Ligera.png" alt="Carga Ligera 1.60mts" class="service-image active">
+                        <img src="img/Carga_Ligera_2.png" alt="Carga Ligera 3mts" class="service-image">
+                        <img src="img/Carga_Ligera_3.png" alt="Carga Ligera 4mts" class="service-image">
+                        <button class="img-nav prev" aria-label="Imagen anterior"><i class="fas fa-chevron-left"></i></button>
+                        <button class="img-nav next" aria-label="Imagen siguiente"><i class="fas fa-chevron-right"></i></button>
+                        <div class="img-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
                     <h3>Carga Ligera</h3>
                     <p class="cap"><i class="fas fa-weight-hanging"></i> 1 a 1.5 Toneladas</p>
-                    <p>Ideal para distribución urbana y entregas locales.</p>
+                    <p>Ideal para distribución urbana y entregas locales. Unidades de 1.60mts, 3mts y 4mts de largo.</p>
                 </div>
                 <div class="service-card fade-in">
-                    <img src="img/Carga_Media.png" alt="Carga Media" class="service-image">
+                    <div class="service-image-wrapper">
+                        <img src="img/Carga_Media.png" alt="Carga Media" class="service-image active">
+                    </div>
                     <h3>Carga Media</h3>
-                    <p class="cap"><i class="fas fa-weight-hanging"></i> 3.5 a 5 Toneladas</p>
+                    <p class="cap"><i class="fas fa-weight-hanging"></i> 3.5 Toneladas</p>
                     <p>Perfecto para cargas comerciales medianas.</p>
                 </div>
                 <div class="service-card fade-in">
-                    <img src="img/Carga_Pesada.png" alt="Carga Pesada" class="service-image">
+                    <div class="service-image-wrapper">
+                        <img src="img/Carga_Pesada.png" alt="Carga Pesada Caja Seca" class="service-image active">
+                        <img src="img/Carga_Pesada_Plataforma.png" alt="Carga Pesada Plataforma" class="service-image">
+                        <button class="img-nav prev" aria-label="Imagen anterior"><i class="fas fa-chevron-left"></i></button>
+                        <button class="img-nav next" aria-label="Imagen siguiente"><i class="fas fa-chevron-right"></i></button>
+                        <div class="img-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
                     <h3>Carga Pesada</h3>
-                    <p class="cap"><i class="fas fa-weight-hanging"></i> 10 a 15 Toneladas</p>
-                    <p>Soluciones para cargas industriales de gran volumen.</p>
+                    <p class="cap"><i class="fas fa-weight-hanging"></i> 10 a 14 Toneladas</p>
+                    <p>Soluciones para cargas industriales de gran volumen. Caja seca y plataforma.</p>
                 </div>
                 <div class="service-card fade-in">
-                    <img src="img/Trailer_48.png" alt="Trailer 48 pies" class="service-image">
+                    <div class="service-image-wrapper">
+                        <img src="img/Trailer_48.png" alt="Trailer 48 pies" class="service-image active">
+                        <img src="img/Trailer_48_2.png" alt="Trailer plana 48 pies" class="service-image">
+                        <button class="img-nav prev" aria-label="Imagen anterior"><i class="fas fa-chevron-left"></i></button>
+                        <button class="img-nav next" aria-label="Imagen siguiente"><i class="fas fa-chevron-right"></i></button>
+                        <div class="img-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
                     <h3>Trailer 40', 45', 48'</h3>
                     <p class="cap"><i class="fas fa-truck-moving"></i> Plataforma</p>
-                    <p>Trailer de 40, 45, 48 pies, ideal para carga pesada como 
+                    <p>Trailer 40' a 48' pies, ideal para carga pesada como 
                         Materiales de construcción, Maquinaria pesada
                         Cargas sobredimensionadas, Contenedores.
                     </p>
                 </div>
                 <div class="service-card fade-in">
-                    <img src="img/Trailer_53.png" alt="Trailer 53 pies" class="service-image">
-                    <h3>Trailer 53'</h3>
-                    <p class="cap"><i class="fas fa-truck-moving"></i> Máxima Capacidad</p>
+                    <div class="service-image-wrapper">
+                        <img src="img/Trailer_53.png" alt="Trailer 53 pies" class="service-image active">
+                        <img src="img/Trailer_53_2.png" alt="Trailer 53 pies vista 2" class="service-image">
+                        <button class="img-nav prev" aria-label="Imagen anterior"><i class="fas fa-chevron-left"></i></button>
+                        <button class="img-nav next" aria-label="Imagen siguiente"><i class="fas fa-chevron-right"></i></button>
+                        <div class="img-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <h3>Trailer 48', 53'</h3>
+                    <p class="cap"><i class="fas fa-truck-moving"></i> Caja Seca</p>
                     <p>El mayor volumen para grandes operaciones logísticas.</p>
                 </div>
             </div>
@@ -362,6 +402,27 @@
         window.addEventListener('scroll', handleScrollAnimations);
         window.addEventListener('load', handleScrollAnimations);
         handleScrollAnimations();
+
+        /* — Slider de imágenes por tarjeta de unidad — */
+        document.querySelectorAll('.service-image-wrapper').forEach(wrapper => {
+            const imgs = wrapper.querySelectorAll('.service-image');
+            const dots = wrapper.querySelectorAll('.dot');
+            const prevBtn = wrapper.querySelector('.img-nav.prev');
+            const nextBtn = wrapper.querySelector('.img-nav.next');
+            let idx = 0;
+
+            function showImage(newIdx) {
+                imgs[idx].classList.remove('active');
+                dots[idx] && dots[idx].classList.remove('active');
+                idx = (newIdx + imgs.length) % imgs.length;
+                imgs[idx].classList.add('active');
+                dots[idx] && dots[idx].classList.add('active');
+            }
+
+            if (nextBtn) nextBtn.addEventListener('click', () => showImage(idx + 1));
+            if (prevBtn) prevBtn.addEventListener('click', () => showImage(idx - 1));
+            dots.forEach((dot, i) => dot.addEventListener('click', () => showImage(i)));
+        });
 
         /* — Filtros de galería — */
         const filterBtns = document.querySelectorAll('.filter-btn');
